@@ -17,7 +17,7 @@ pip install -r requirements.txt && python download_models.py
 python run_integrity_check.py --input_dir ./sample_submissions --output_dir ./reports
 ```
 
-`download_models.py` downloads three open-source models once (about 600 MB in total). The last
+`download_models.py` downloads three open-source models once (about 700 MB in total). The last
 command analyses the 15 sample files and writes, for each file, `<name>.json` and `<name>.md`, plus
 `summary.md` and `summary_matrix.csv` for the whole batch.
 

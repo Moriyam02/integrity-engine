@@ -9,9 +9,9 @@
   ],
   "benign_template_group": ["case_01.docx", "case_02.docx", "case_03.pdf", "case_04.pdf", "case_05.pdf"],
   "external_matches": {
-    "last_leaf.docx": "the_last_leaf_poem.txt",
-    "last_leaf_copy.pdf": "the_last_leaf_poem.txt",
-    "last_leaf_reading.mp4": "the_last_leaf_poem.txt"
+    "last_leaf.docx": "last_leaf_poem.txt",
+    "last_leaf_copy.pdf": "last_leaf_poem.txt",
+    "last_leaf_reading.mp4": "last_leaf_poem.txt"
   },
   "ai_generated": ["ai_written.pdf"],
   "human_written": [
@@ -25,13 +25,13 @@
   "files": [
     {"file": "last_leaf.docx", "format": "docx", "category": "poem_original", "expected_flagged": true,
      "note": "Public-domain poem; also present in the reference corpus and copied by the next two files.",
-     "peer_match_with": ["last_leaf_copy.pdf", "last_leaf_reading.mp4"], "external_source": "the_last_leaf_poem.txt"},
+     "peer_match_with": ["last_leaf_copy.pdf", "last_leaf_reading.mp4"], "external_source": "last_leaf_poem.txt"},
     {"file": "last_leaf_copy.pdf", "format": "pdf", "category": "exact_copy_other_format", "expected_flagged": true,
      "note": "Same text as last_leaf.docx saved as PDF.",
-     "peer_match_with": ["last_leaf.docx", "last_leaf_reading.mp4"], "external_source": "the_last_leaf_poem.txt"},
+     "peer_match_with": ["last_leaf.docx", "last_leaf_reading.mp4"], "external_source": "last_leaf_poem.txt"},
     {"file": "last_leaf_reading.mp4", "format": "mp4", "category": "cross_modal_copy", "expected_flagged": true,
      "note": "Spoken reading of the first two stanzas of the poem.",
-     "peer_match_with": ["last_leaf.docx", "last_leaf_copy.pdf"], "external_source": "the_last_leaf_poem.txt"},
+     "peer_match_with": ["last_leaf.docx", "last_leaf_copy.pdf"], "external_source": "last_leaf_poem.txt"},
     {"file": "para_a.docx", "format": "docx", "category": "paraphrase", "expected_flagged": true,
      "note": "Short text about walking as exercise.", "peer_match_with": ["para_b.docx"]},
     {"file": "para_b.docx", "format": "docx", "category": "paraphrase", "expected_flagged": true,
