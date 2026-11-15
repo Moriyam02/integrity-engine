@@ -1,0 +1,192 @@
+{
+  "document_id": "last_leaf.docx",
+  "total_integrity_risk": "HIGH",
+  "scores": {
+    "peer_similarity_percentage": 100.0,
+    "external_similarity_percentage": 100.0,
+    "ai_generated_probability": 2.9
+  },
+  "peer_matches": [
+    {
+      "matched_file": "last_leaf_copy.pdf",
+      "similarity_score": 1.0,
+      "word_overlap_jaccard": 1.0,
+      "query_passage": "I saw him once before, As he passed by the door, And again The pavement stones resound, As he totters o’er the ground With his cane. They say that in his prime, Ere the pruning-knife of Time Cut him down,",
+      "matched_passage": "I saw him once before, As he passed by the door, And again The pavement stones resound, As he totters o’er the ground With his cane. They say that in his prime, Ere the pruning-knife of Time Cut him down,",
+      "location": {
+        "query_page": 1,
+        "matched_page": 1
+      }
+    },
+    {
+      "matched_file": "last_leaf_copy.pdf",
+      "similarity_score": 1.0,
+      "word_overlap_jaccard": 1.0,
+      "query_passage": "said— Poor old lady, she is dead Long ago— That he had a Roman nose, And his cheek was like a rose In the snow; But now his nose is thin, And it rests upon his chin Like a staff,",
+      "matched_passage": "said— Poor old lady, she is dead Long ago— That he had a Roman nose, And his cheek was like a rose In the snow; But now his nose is thin, And it rests upon his chin Like a staff,",
+      "location": {
+        "query_page": 2,
+        "matched_page": 2
+      }
+    },
+    {
+      "matched_file": "last_leaf_copy.pdf",
+      "similarity_score": 1.0,
+      "word_overlap_jaccard": 1.0,
+      "query_passage": "For me to sit and grin At him here; But the old three-cornered hat, And the breeches, and all that, Are so queer! And if I should live to be The last leaf upon the tree In the spring, Let",
+      "matched_passage": "For me to sit and grin At him here; But the old three-cornered hat, And the breeches, and all that, Are so queer! And if I should live to be The last leaf upon the tree In the spring, Let",
+      "location": {
+        "query_page": 2,
+        "matched_page": 2
+      }
+    },
+    {
+      "matched_file": "last_leaf_copy.pdf",
+      "similarity_score": 1.0,
+      "word_overlap_jaccard": 1.0,
+      "query_passage": "On the lips that he has prest In their bloom, And the names he loved to hear Have been carved for many a year On the tomb. My grandmamma has said— Poor old lady, she is dead Long ago— That",
+      "matched_passage": "On the lips that he has prest In their bloom, And the names he loved to hear Have been carved for many a year On the tomb. My grandmamma has said— Poor old lady, she is dead Long ago— That",
+      "location": {
+        "query_page": "1-2",
+        "matched_page": "1-2"
+      }
+    },
+    {
+      "matched_file": "last_leaf_copy.pdf",
+      "similarity_score": 1.0,
+      "word_overlap_jaccard": 1.0,
+      "query_passage": "thin, And it rests upon his chin Like a staff, And a crook is in his back, And a melancholy crack In his laugh. I know it is a sin For me to sit and grin At him here; But",
+      "matched_passage": "thin, And it rests upon his chin Like a staff, And a crook is in his back, And a melancholy crack In his laugh. I know it is a sin For me to sit and grin At him here; But",
+      "location": {
+        "query_page": 2,
+        "matched_page": 2
+      }
+    },
+    {
+      "matched_file": "last_leaf_copy.pdf",
+      "similarity_score": 1.0,
+      "word_overlap_jaccard": 1.0,
+      "query_passage": "The last leaf upon the tree In the spring, Let them smile, as I do now, At the old forsaken bough Where I cling.",
+      "matched_passage": "The last leaf upon the tree In the spring, Let them smile, as I do now, At the old forsaken bough Where I cling.",
+      "location": {
+        "query_page": 2,
+        "matched_page": 2
+      }
+    },
+    {
+      "matched_file": "last_leaf_copy.pdf",
+      "similarity_score": 1.0,
+      "word_overlap_jaccard": 1.0,
+      "query_passage": "streets, And looks at all he meets Sad and wan, And he shakes his feeble head, That it seems as if he said, “They are gone.” The mossy marbles rest On the lips that he has prest In their bloom,",
+      "matched_passage": "streets, And looks at all he meets Sad and wan, And he shakes his feeble head, That it seems as if he said, “They are gone.” The mossy marbles rest On the lips that he has prest In their bloom,",
+      "location": {
+        "query_page": 1,
+        "matched_page": 1
+      }
+    },
+    {
+      "matched_file": "last_leaf_copy.pdf",
+      "similarity_score": 1.0,
+      "word_overlap_jaccard": 1.0,
+      "query_passage": "his prime, Ere the pruning-knife of Time Cut him down, Not a better man was found By the Crier on his round Through the town. But now he walks the streets, And looks at all he meets Sad and wan,",
+      "matched_passage": "his prime, Ere the pruning-knife of Time Cut him down, Not a better man was found By the Crier on his round Through the town. But now he walks the streets, And looks at all he meets Sad and wan,",
+      "location": {
+        "query_page": 1,
+        "matched_page": 1
+      }
+    }
+  ],
+  "multimodal_matches": [],
+  "external_matches": [
+    {
+      "matched_file": "last_leaf_poem.txt",
+      "similarity_score": 1.0,
+      "word_overlap_jaccard": 1.0,
+      "query_passage": "I saw him once before, As he passed by the door, And again The pavement stones resound, As he totters o’er the ground With his cane. They say that in his prime, Ere the pruning-knife of Time Cut him down,",
+      "matched_passage": "I saw him once before, As he passed by the door, And again The pavement stones resound, As he totters o’er the ground With his cane. They say that in his prime, Ere the pruning-knife of Time Cut him down,",
+      "location": {
+        "query_page": 1,
+        "matched_page": null
+      }
+    },
+    {
+      "matched_file": "last_leaf_poem.txt",
+      "similarity_score": 1.0,
+      "word_overlap_jaccard": 1.0,
+      "query_passage": "On the lips that he has prest In their bloom, And the names he loved to hear Have been carved for many a year On the tomb. My grandmamma has said— Poor old lady, she is dead Long ago— That",
+      "matched_passage": "On the lips that he has prest In their bloom, And the names he loved to hear Have been carved for many a year On the tomb. My grandmamma has said— Poor old lady, she is dead Long ago— That",
+      "location": {
+        "query_page": "1-2",
+        "matched_page": null
+      }
+    },
+    {
+      "matched_file": "last_leaf_poem.txt",
+      "similarity_score": 1.0,
+      "word_overlap_jaccard": 1.0,
+      "query_passage": "said— Poor old lady, she is dead Long ago— That he had a Roman nose, And his cheek was like a rose In the snow; But now his nose is thin, And it rests upon his chin Like a staff,",
+      "matched_passage": "said— Poor old lady, she is dead Long ago— That he had a Roman nose, And his cheek was like a rose In the snow; But now his nose is thin, And it rests upon his chin Like a staff,",
+      "location": {
+        "query_page": 2,
+        "matched_page": null
+      }
+    },
+    {
+      "matched_file": "last_leaf_poem.txt",
+      "similarity_score": 1.0,
+      "word_overlap_jaccard": 1.0,
+      "query_passage": "thin, And it rests upon his chin Like a staff, And a crook is in his back, And a melancholy crack In his laugh. I know it is a sin For me to sit and grin At him here; But",
+      "matched_passage": "thin, And it rests upon his chin Like a staff, And a crook is in his back, And a melancholy crack In his laugh. I know it is a sin For me to sit and grin At him here; But",
+      "location": {
+        "query_page": 2,
+        "matched_page": null
+      }
+    },
+    {
+      "matched_file": "last_leaf_poem.txt",
+      "similarity_score": 1.0,
+      "word_overlap_jaccard": 1.0,
+      "query_passage": "For me to sit and grin At him here; But the old three-cornered hat, And the breeches, and all that, Are so queer! And if I should live to be The last leaf upon the tree In the spring, Let",
+      "matched_passage": "For me to sit and grin At him here; But the old three-cornered hat, And the breeches, and all that, Are so queer! And if I should live to be The last leaf upon the tree In the spring, Let",
+      "location": {
+        "query_page": 2,
+        "matched_page": null
+      }
+    },
+    {
+      "matched_file": "last_leaf_poem.txt",
+      "similarity_score": 1.0,
+      "word_overlap_jaccard": 1.0,
+      "query_passage": "The last leaf upon the tree In the spring, Let them smile, as I do now, At the old forsaken bough Where I cling.",
+      "matched_passage": "The last leaf upon the tree In the spring, Let them smile, as I do now, At the old forsaken bough Where I cling.",
+      "location": {
+        "query_page": 2,
+        "matched_page": null
+      }
+    },
+    {
+      "matched_file": "last_leaf_poem.txt",
+      "similarity_score": 1.0,
+      "word_overlap_jaccard": 1.0,
+      "query_passage": "streets, And looks at all he meets Sad and wan, And he shakes his feeble head, That it seems as if he said, “They are gone.” The mossy marbles rest On the lips that he has prest In their bloom,",
+      "matched_passage": "streets, And looks at all he meets Sad and wan, And he shakes his feeble head, That it seems as if he said, “They are gone.” The mossy marbles rest On the lips that he has prest In their bloom,",
+      "location": {
+        "query_page": 1,
+        "matched_page": null
+      }
+    },
+    {
+      "matched_file": "last_leaf_poem.txt",
+      "similarity_score": 1.0,
+      "word_overlap_jaccard": 1.0,
+      "query_passage": "his prime, Ere the pruning-knife of Time Cut him down, Not a better man was found By the Crier on his round Through the town. But now he walks the streets, And looks at all he meets Sad and wan,",
+      "matched_passage": "his prime, Ere the pruning-knife of Time Cut him down, Not a better man was found By the Crier on his round Through the town. But now he walks the streets, And looks at all he meets Sad and wan,",
+      "location": {
+        "query_page": 1,
+        "matched_page": null
+      }
+    }
+  ],
+  "explanations": "Overall integrity risk: HIGH. 100% of this document's passages closely match other submissions (last_leaf_copy.pdf); the strongest match scores 1.00. 100% of passages closely match external reference texts (last_leaf_poem.txt). The AI-text detector rates the writing 3% likely AI-generated (a statistical estimate, not proof).",
+  "warnings": []
+}

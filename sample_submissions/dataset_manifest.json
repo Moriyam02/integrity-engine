@@ -1,0 +1,60 @@
+{
+  "description": "Ground truth for the integrity engine. 'expected_flagged' = the file should get MEDIUM or HIGH risk; null = it must be skipped (NOT_ASSESSED).",
+  "license_note": "The Last Leaf by Oliver Wendell Holmes Sr. (1831) is public domain. All other texts and recordings were created by the candidate; ai_written.pdf was produced by an AI chatbot.",
+  "peer_match_pairs": [
+    ["last_leaf.docx", "last_leaf_copy.pdf"],
+    ["last_leaf.docx", "last_leaf_reading.mp4"],
+    ["last_leaf_copy.pdf", "last_leaf_reading.mp4"],
+    ["para_a.docx", "para_b.docx"]
+  ],
+  "benign_template_group": ["case_01.docx", "case_02.docx", "case_03.pdf", "case_04.pdf", "case_05.pdf"],
+  "external_matches": {
+    "last_leaf.docx": "the_last_leaf_poem.txt",
+    "last_leaf_copy.pdf": "the_last_leaf_poem.txt",
+    "last_leaf_reading.mp4": "the_last_leaf_poem.txt"
+  },
+  "ai_generated": ["ai_written.pdf"],
+  "human_written": [
+    "last_leaf.docx", "last_leaf_copy.pdf", "last_leaf_reading.mp4",
+    "para_a.docx", "para_b.docx",
+    "case_01.docx", "case_02.docx", "case_03.pdf", "case_04.pdf", "case_05.pdf",
+    "original_essay.pdf", "original_pitch.mp4"
+  ],
+  "unreadable": ["empty.pdf", "silent.mp4"],
+  "authorship_note": "The AI signal is evaluated only on files with a known label: ai_generated (positives) and human_written (negatives).",
+  "files": [
+    {"file": "last_leaf.docx", "format": "docx", "category": "poem_original", "expected_flagged": true,
+     "note": "Public-domain poem; also present in the reference corpus and copied by the next two files.",
+     "peer_match_with": ["last_leaf_copy.pdf", "last_leaf_reading.mp4"], "external_source": "the_last_leaf_poem.txt"},
+    {"file": "last_leaf_copy.pdf", "format": "pdf", "category": "exact_copy_other_format", "expected_flagged": true,
+     "note": "Same text as last_leaf.docx saved as PDF.",
+     "peer_match_with": ["last_leaf.docx", "last_leaf_reading.mp4"], "external_source": "the_last_leaf_poem.txt"},
+    {"file": "last_leaf_reading.mp4", "format": "mp4", "category": "cross_modal_copy", "expected_flagged": true,
+     "note": "Spoken reading of the first two stanzas of the poem.",
+     "peer_match_with": ["last_leaf.docx", "last_leaf_copy.pdf"], "external_source": "the_last_leaf_poem.txt"},
+    {"file": "para_a.docx", "format": "docx", "category": "paraphrase", "expected_flagged": true,
+     "note": "Short text about walking as exercise.", "peer_match_with": ["para_b.docx"]},
+    {"file": "para_b.docx", "format": "docx", "category": "paraphrase", "expected_flagged": true,
+     "note": "Same ideas as para_a.docx, reworded by hand.", "peer_match_with": ["para_a.docx"]},
+    {"file": "case_01.docx", "format": "docx", "category": "benign_shared_template", "expected_flagged": false,
+     "note": "Shares the bookshop case prompt; original answer.", "peer_match_with": []},
+    {"file": "case_02.docx", "format": "docx", "category": "benign_shared_template", "expected_flagged": false,
+     "note": "Shares the bookshop case prompt; original answer.", "peer_match_with": []},
+    {"file": "case_03.pdf", "format": "pdf", "category": "benign_shared_template", "expected_flagged": false,
+     "note": "Shares the bookshop case prompt; original answer.", "peer_match_with": []},
+    {"file": "case_04.pdf", "format": "pdf", "category": "benign_shared_template", "expected_flagged": false,
+     "note": "Shares the bookshop case prompt; original answer.", "peer_match_with": []},
+    {"file": "case_05.pdf", "format": "pdf", "category": "benign_shared_template", "expected_flagged": false,
+     "note": "Shares the bookshop case prompt; original answer.", "peer_match_with": []},
+    {"file": "ai_written.pdf", "format": "pdf", "category": "ai_generated", "expected_flagged": true,
+     "note": "Chatbot-written text about the effects of AI today.", "peer_match_with": []},
+    {"file": "original_essay.pdf", "format": "pdf", "category": "original", "expected_flagged": false,
+     "note": "Independent essay about a favourite festival.", "peer_match_with": []},
+    {"file": "original_pitch.mp4", "format": "mp4", "category": "original", "expected_flagged": false,
+     "note": "Independent spoken clip about a favourite place in Kolkata.", "peer_match_with": []},
+    {"file": "empty.pdf", "format": "pdf", "category": "degraded", "expected_flagged": null,
+     "note": "Zero-byte file: must be skipped with a warning.", "readable": false},
+    {"file": "silent.mp4", "format": "mp4", "category": "degraded", "expected_flagged": null,
+     "note": "Silent phone video: must be skipped with a warning.", "readable": false}
+  ]
+}

@@ -1,0 +1,23 @@
+13 readable files, 4 real matching pairs.
+A pair counts as 'match' when at least 20% of the units of one file have a partner at or above t in the other file (and at least 2 units match).
+real-min = lowest best-score among real matches; benign-max = highest among the rest.
+
+model                          units         real-min benign-max | best t  TP  FP  FN    F1
+all-MiniLM-L6-v2               words 40/10       0.96       0.94 |   0.75   4   0   0  1.00
+all-MiniLM-L6-v2               words 80/20       0.85       0.77 |   0.80   4   0   0  1.00
+all-MiniLM-L6-v2               sentences x1      0.72       0.79 |   0.70   4   0   0  1.00
+all-MiniLM-L6-v2               sentences x2      0.78       0.79 |   0.70   4   1   0  0.89
+all-MiniLM-L6-v2               sentences x3      0.66       0.80 |   0.65   2   0   2  0.67
+
+paraphrase-MiniLM-L6-v2        words 40/10       0.95       0.57 |   0.75   4   0   0  1.00
+paraphrase-MiniLM-L6-v2        words 80/20       0.89       0.80 |   0.80   4   0   0  1.00
+paraphrase-MiniLM-L6-v2        sentences x1      0.74       0.67 |   0.70   4   0   0  1.00
+paraphrase-MiniLM-L6-v2        sentences x2      0.77       0.66 |   0.70   4   0   0  1.00
+paraphrase-MiniLM-L6-v2        sentences x3      0.80       0.83 |   0.70   2   0   2  0.67
+
+all-mpnet-base-v2              words 40/10       0.96       0.87 |   0.80   4   0   0  1.00
+all-mpnet-base-v2              words 80/20       0.87       0.84 |   0.85   4   0   0  1.00
+all-mpnet-base-v2              sentences x1      0.79       0.71 |   0.65   4   0   0  1.00
+all-mpnet-base-v2              sentences x2      0.79       0.73 |   0.65   4   1   0  0.89
+all-mpnet-base-v2              sentences x3      0.72       0.70 |   0.65   2   0   2  0.67
+

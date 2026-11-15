@@ -1,0 +1,16 @@
+# Python 3.9+ required
+
+# Task 1: extraction
+pypdf>=4.0
+python-docx>=1.1
+faster-whisper>=1.0        # open Whisper models (tiny/base); reads MP4 directly
+av<19                      # newer PyAV versions break faster-whisper's audio reading
+
+# Task 2: embeddings + vector index
+sentence-transformers>=2.7 # embedding models (paraphrase-MiniLM-L6-v2)
+faiss-cpu>=1.8
+numpy>=1.24
+
+# Task 3: AI-content detection (Hugging Face)
+transformers>=4.40
+torch>=2.2

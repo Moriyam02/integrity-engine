@@ -1,0 +1,16 @@
+{
+  "document_id": "empty.pdf",
+  "total_integrity_risk": "NOT_ASSESSED",
+  "scores": {
+    "peer_similarity_percentage": null,
+    "external_similarity_percentage": null,
+    "ai_generated_probability": null
+  },
+  "peer_matches": [],
+  "multimodal_matches": [],
+  "external_matches": [],
+  "explanations": "This file could not be analysed and was skipped: file is empty (0 bytes).",
+  "warnings": [
+    "file is empty (0 bytes)"
+  ]
+}

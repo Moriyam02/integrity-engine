@@ -1,0 +1,14 @@
+{
+  "document_id": "case_04.pdf",
+  "total_integrity_risk": "LOW",
+  "scores": {
+    "peer_similarity_percentage": 0.0,
+    "external_similarity_percentage": 0.0,
+    "ai_generated_probability": 0.0
+  },
+  "peer_matches": [],
+  "multimodal_matches": [],
+  "external_matches": [],
+  "explanations": "Overall integrity risk: LOW. The AI-text detector rates the writing 0% likely AI-generated (a statistical estimate, not proof). 5 passage(s) repeated across several submissions (likely a shared prompt or template) were ignored. No significant overlap with other submissions or reference texts was found.",
+  "warnings": []
+}

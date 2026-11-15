@@ -1,0 +1,70 @@
+{
+  "document_id": "para_b.docx",
+  "total_integrity_risk": "HIGH",
+  "scores": {
+    "peer_similarity_percentage": 100.0,
+    "external_similarity_percentage": 0.0,
+    "ai_generated_probability": 0.0
+  },
+  "peer_matches": [
+    {
+      "matched_file": "para_a.docx",
+      "similarity_score": 0.95,
+      "word_overlap_jaccard": 0.86,
+      "query_passage": "from running is to measure the height of a person's centre of mass using motion capture or a force plate at mid-stance.",
+      "matched_passage": "to measure the height of a person's centre of mass using motion capture or a force plate at mid-stance.",
+      "location": {
+        "query_page": 1,
+        "matched_page": 1
+      }
+    },
+    {
+      "matched_file": "para_a.docx",
+      "similarity_score": 0.93,
+      "word_overlap_jaccard": 0.83,
+      "query_passage": "The word walk came from the Old English wealcan 'to roll'. In humans and other two legged creatures, walking is generally distinguished from running in that only one foot at a time leaves contact with the ground and there is",
+      "matched_passage": "The word walk is descended from the Old English wealcan 'to roll'. In humans and other bipeds, walking is generally distinguished from running in that only one foot at a time leaves contact with the ground and there is a",
+      "location": {
+        "query_page": 1,
+        "matched_page": 1
+      }
+    },
+    {
+      "matched_file": "para_a.docx",
+      "similarity_score": 0.93,
+      "word_overlap_jaccard": 0.72,
+      "query_passage": "the presence or absence of a suspended phase or the number of feet in contact any time do not provide mechanically correct classification.[2] The most accurate way of distinguishing walking from running is to measure the height of a person's",
+      "matched_passage": "absence of a suspended phase or the number of feet in contact any time do not yield mechanically correct classification.[2] The most effective method to distinguish walking from running is to measure the height of a person's centre of mass",
+      "location": {
+        "query_page": 1,
+        "matched_page": 1
+      }
+    },
+    {
+      "matched_file": "para_a.docx",
+      "similarity_score": 0.9,
+      "word_overlap_jaccard": 0.77,
+      "query_passage": "a time leaves contact with the ground and there is a period of double-support. Running on the other hand begins when both feet leave the ground during each step. This difference has the status of a formal requirement in competitive",
+      "matched_passage": "time leaves contact with the ground and there is a period of double-support. In contrast, running begins when both feet leave the ground during each step. This distinction has the status of a formal requirement in competitive walking events. For",
+      "location": {
+        "query_page": 1,
+        "matched_page": 1
+      }
+    },
+    {
+      "matched_file": "para_a.docx",
+      "similarity_score": 0.83,
+      "word_overlap_jaccard": 0.81,
+      "query_passage": "difference has the status of a formal requirement in competitive walking events. For four-legged species, there are numerous gaits which may be termed walking or running, and distinctions based upon the presence or absence of a suspended phase or the",
+      "matched_passage": "status of a formal requirement in competitive walking events. For quadrupedal species, there are numerous gaits which may be termed walking or running, and distinctions based upon the presence or absence of a suspended phase or the number of feet",
+      "location": {
+        "query_page": 1,
+        "matched_page": 1
+      }
+    }
+  ],
+  "multimodal_matches": [],
+  "external_matches": [],
+  "explanations": "Overall integrity risk: HIGH. 100% of this document's passages closely match other submissions (para_a.docx); the strongest match scores 0.95. The AI-text detector rates the writing 0% likely AI-generated (a statistical estimate, not proof).",
+  "warnings": []
+}

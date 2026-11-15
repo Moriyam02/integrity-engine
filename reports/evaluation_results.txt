@@ -1,0 +1,87 @@
+======================================================================
+PART A: pair similarity (best window-to-window cosine score per pair of files)
+======================================================================
+13 readable files, 78 pairs, 4 real matches, 24 template windows ignored
+
+ score  truth  pair
+  1.00  MATCH  last_leaf.docx <-> last_leaf_copy.pdf
+  0.96  MATCH  last_leaf.docx <-> last_leaf_reading.mp4
+  0.96  MATCH  last_leaf_copy.pdf <-> last_leaf_reading.mp4
+  0.95  MATCH  para_a.docx <-> para_b.docx
+  0.57  no     case_01.docx <-> case_03.pdf  (same-case answers)
+  0.55  no     case_02.docx <-> case_03.pdf  (same-case answers)
+  0.54  no     case_03.pdf <-> case_05.pdf  (same-case answers)
+  0.47  no     case_01.docx <-> case_05.pdf  (same-case answers)
+  0.45  no     case_01.docx <-> case_02.docx  (same-case answers)
+  0.44  no     case_02.docx <-> case_05.pdf  (same-case answers)
+  0.34  no     ai_written.pdf <-> case_04.pdf
+  0.34  no     ai_written.pdf <-> case_02.docx
+  0.33  no     last_leaf_reading.mp4 <-> para_a.docx
+  0.31  no     last_leaf.docx <-> para_b.docx
+  0.31  no     last_leaf_copy.pdf <-> para_b.docx
+  0.31  no     last_leaf.docx <-> para_a.docx
+
+Lowest score among REAL matches : 0.95  (para_a.docx <-> para_b.docx)
+Highest score among NON-matches : 0.57  (case_01.docx <-> case_03.pdf)
+
+Threshold sweep (a pair is predicted 'match' if its score >= threshold):
+threshold   TP  FP  FN   TN  precision recall    F1
+     0.50    4   3   0   71       0.57   1.00  0.73
+     0.55    4   1   0   73       0.80   1.00  0.89
+     0.60    4   0   0   74       1.00   1.00  1.00
+     0.65    4   0   0   74       1.00   1.00  1.00
+     0.70    4   0   0   74       1.00   1.00  1.00
+     0.75    4   0   0   74       1.00   1.00  1.00  <- current
+     0.80    4   0   0   74       1.00   1.00  1.00
+     0.85    4   0   0   74       1.00   1.00  1.00
+     0.90    4   0   0   74       1.00   1.00  1.00
+     0.95    4   0   0   74       1.00   1.00  1.00
+
+======================================================================
+PART B: final reports versus ground truth
+======================================================================
+file                     expected  got            peer%   ext%    AI%
+last_leaf.docx           flagged   HIGH           100.0  100.0    2.9  ok
+last_leaf_copy.pdf       flagged   HIGH           100.0  100.0    2.9  ok
+last_leaf_reading.mp4    flagged   HIGH           100.0  100.0    2.2  ok
+para_a.docx              flagged   HIGH           100.0    0.0    0.0  ok
+para_b.docx              flagged   HIGH           100.0    0.0    0.0  ok
+case_01.docx             clean     LOW              0.0    0.0    0.1  ok
+case_02.docx             clean     LOW              0.0    0.0    0.4  ok
+case_03.pdf              clean     LOW              0.0    0.0    0.1  ok
+case_04.pdf              clean     LOW              0.0    0.0    0.0  ok
+case_05.pdf              clean     LOW              0.0    0.0    0.1  ok
+ai_written.pdf           flagged   LOW              0.0    0.0    0.0  WRONG
+original_essay.pdf       clean     LOW              0.0    0.0   51.8  ok
+original_pitch.mp4       clean     LOW              0.0    0.0    0.6  ok
+empty.pdf                skipped   NOT_ASSESSED       -      -      -  ok
+silent.mp4               skipped   NOT_ASSESSED       -      -      -  ok
+
+Unreadable files correctly skipped: 2 of 2
+
+Overall (flagged = MEDIUM or HIGH risk)
+                    predicted YES   predicted NO
+  actual YES                5               1
+  actual NO                 0               7
+  precision 1.00 | recall 0.83 | F1 0.91
+
+Peer signal (peer % >= 20)
+                    predicted YES   predicted NO
+  actual YES                5               0
+  actual NO                 0               8
+  precision 1.00 | recall 1.00 | F1 1.00
+
+External signal (external % >= 20)
+                    predicted YES   predicted NO
+  actual YES                3               0
+  actual NO                 0              10
+  precision 1.00 | recall 1.00 | F1 1.00
+
+AI signal (AI % >= 70; only files with known authorship)
+                    predicted YES   predicted NO
+  actual YES                0               1
+  actual NO                 0              12
+  precision n/a | recall 0.00 | F1 n/a
+
+Files the system got wrong:
+  ai_written.pdf: missed (risk LOW; peer 0%, external 0%, AI 0%)
